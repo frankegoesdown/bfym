@@ -1,7 +1,7 @@
 package mock
 
 import (
-	"github.com/ribice/gorsk/pkg/utl/model"
+	"github.com/frankegoesdown/bfym/pkg/utl/model"
 )
 
 // JWT mock

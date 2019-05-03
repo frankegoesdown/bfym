@@ -34,24 +34,24 @@ package api
 import (
 	"crypto/sha1"
 
-	"github.com/ribice/gorsk/pkg/utl/zlog"
+	"github.com/frankegoesdown/bfym/pkg/utl/zlog"
 
-	"github.com/ribice/gorsk/pkg/api/auth"
-	al "github.com/ribice/gorsk/pkg/api/auth/logging"
-	at "github.com/ribice/gorsk/pkg/api/auth/transport"
-	"github.com/ribice/gorsk/pkg/api/password"
-	pl "github.com/ribice/gorsk/pkg/api/password/logging"
-	pt "github.com/ribice/gorsk/pkg/api/password/transport"
-	"github.com/ribice/gorsk/pkg/api/user"
-	ul "github.com/ribice/gorsk/pkg/api/user/logging"
-	ut "github.com/ribice/gorsk/pkg/api/user/transport"
+	"github.com/frankegoesdown/bfym/pkg/api/auth"
+	al "github.com/frankegoesdown/bfym/pkg/api/auth/logging"
+	at "github.com/frankegoesdown/bfym/pkg/api/auth/transport"
+	"github.com/frankegoesdown/bfym/pkg/api/password"
+	pl "github.com/frankegoesdown/bfym/pkg/api/password/logging"
+	pt "github.com/frankegoesdown/bfym/pkg/api/password/transport"
+	"github.com/frankegoesdown/bfym/pkg/api/user"
+	ul "github.com/frankegoesdown/bfym/pkg/api/user/logging"
+	ut "github.com/frankegoesdown/bfym/pkg/api/user/transport"
 
-	"github.com/ribice/gorsk/pkg/utl/config"
-	"github.com/ribice/gorsk/pkg/utl/middleware/jwt"
-	"github.com/ribice/gorsk/pkg/utl/postgres"
-	"github.com/ribice/gorsk/pkg/utl/rbac"
-	"github.com/ribice/gorsk/pkg/utl/secure"
-	"github.com/ribice/gorsk/pkg/utl/server"
+	"github.com/frankegoesdown/bfym/pkg/utl/config"
+	"github.com/frankegoesdown/bfym/pkg/utl/middleware/jwt"
+	"github.com/frankegoesdown/bfym/pkg/utl/postgres"
+	"github.com/frankegoesdown/bfym/pkg/utl/rbac"
+	"github.com/frankegoesdown/bfym/pkg/utl/secure"
+	"github.com/frankegoesdown/bfym/pkg/utl/server"
 )
 
 // Start starts the API service

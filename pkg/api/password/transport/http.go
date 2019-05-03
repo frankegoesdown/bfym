@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ribice/gorsk/pkg/api/password"
+	"github.com/frankegoesdown/bfym/pkg/api/password"
 
-	"github.com/ribice/gorsk/pkg/utl/model"
+	"github.com/frankegoesdown/bfym/pkg/utl/model"
 
 	"github.com/labstack/echo"
 )

@@ -4,8 +4,8 @@ import (
 	"github.com/go-pg/pg"
 	"github.com/go-pg/pg/orm"
 	"github.com/labstack/echo"
-	"github.com/ribice/gorsk/pkg/api/user/platform/pgsql"
-	"github.com/ribice/gorsk/pkg/utl/model"
+	"github.com/frankegoesdown/bfym/pkg/api/user/platform/pgsql"
+	"github.com/frankegoesdown/bfym/pkg/utl/model"
 )
 
 // Service represents user application interface

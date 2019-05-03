@@ -3,7 +3,7 @@ package auth
 import (
 	"net/http"
 
-	"github.com/ribice/gorsk/pkg/utl/model"
+	"github.com/frankegoesdown/bfym/pkg/utl/model"
 
 	"github.com/labstack/echo"
 )
