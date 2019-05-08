@@ -5,8 +5,8 @@ import (
 	"log"
 	"strings"
 
-	gorsk "github.com/frankegoesdown/bfym/pkg/utl/model"
-	"github.com/frankegoesdown/bfym/pkg/utl/secure"
+	gorsk "github.com/ribice/gorsk/pkg/utl/model"
+	"github.com/ribice/gorsk/pkg/utl/secure"
 
 	"github.com/go-pg/pg"
 	"github.com/go-pg/pg/orm"
@@ -20,7 +20,8 @@ func main() {
 	INSERT INTO public.roles VALUES (120, 120, 'COMPANY_ADMIN');
 	INSERT INTO public.roles VALUES (130, 130, 'LOCATION_ADMIN');
 	INSERT INTO public.roles VALUES (200, 200, 'USER');`
-	var psn = `postgres://postgres:postgres@localhost:5432/bfym`
+	//var psn = `postgres://postgres:postgres@localhost:5432/bfym?ssl=false`
+	var psn = `postgres://postgres:password@localhost:5432/public?sslmode=disable`
 	queries := strings.Split(dbInsert, ";")
 
 	u, err := pg.ParseURL(psn)

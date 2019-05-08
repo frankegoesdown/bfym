@@ -24,9 +24,9 @@ import (
 
 // Common error types
 var (
-	ErrNotSupported              = errors.New("pq: Unsupported command")
-	ErrInFailedTransaction       = errors.New("pq: Could not complete operation in a failed transaction")
-	ErrSSLNotSupported           = errors.New("pq: SSL is not enabled on the server")
+	ErrNotSupported        = errors.New("pq: Unsupported command")
+	ErrInFailedTransaction = errors.New("pq: Could not complete operation in a failed transaction")
+	// ErrSSLNotSupported           = errors.New("pq: SSL is not enabled on the server")
 	ErrSSLKeyHasWorldPermissions = errors.New("pq: Private key file has group or world access. Permissions should be u=rw (0600) or less")
 	ErrCouldNotDetectUsername    = errors.New("pq: Could not detect default username. Please provide one explicitly")
 
@@ -1056,9 +1056,9 @@ func (cn *conn) ssl(o values) error {
 		return err
 	}
 
-	if b[0] != 'S' {
-		return ErrSSLNotSupported
-	}
+	// if b[0] != 'S' {
+	// 	return ErrSSLNotSupported
+	// }
 
 	cn.c, err = upgrade(cn.c)
 	return err

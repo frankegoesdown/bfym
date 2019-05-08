@@ -1,9 +1,10 @@
 package auth
 
 import (
+	"log"
 	"net/http"
 
-	"github.com/frankegoesdown/bfym/pkg/utl/model"
+	gorsk "github.com/frankegoesdown/bfym/pkg/utl/model"
 
 	"github.com/labstack/echo"
 )
@@ -19,7 +20,10 @@ func (a *Auth) Authenticate(c echo.Context, user, pass string) (*gorsk.AuthToken
 	if err != nil {
 		return nil, err
 	}
-
+	log.Println(a.db)
+	log.Println(user)
+	log.Println(pass)
+	log.Println(u.Password)
 	if !a.sec.HashMatchesPassword(u.Password, pass) {
 		return nil, ErrInvalidCredentials
 	}

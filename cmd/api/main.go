@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 
-	"github.com/frankegoesdown/bfym/pkg/api"
+	"github.com/ribice/gorsk/pkg/api"
 
-	"github.com/frankegoesdown/bfym/pkg/utl/config"
+	"github.com/ribice/gorsk/pkg/utl/config"
 )
 
 func main() {
